@@ -2,6 +2,7 @@
  **Assignment**
 
 **I.	Create Functions for Testing**
+
 Before we start testing with qUnit, we need to create a few functions to use as our test objects. Follow these steps to write your functions for testing:
 
 1.	Create your VS Code folder and file for functions:
@@ -26,7 +27,8 @@ Before we start testing with qUnit, we need to create a few functions to use as 
 
 •	The last function is simple. It checks if the given parameter number is a perfect square and returns a boolean:
 
-**II.Export / Import functions (CommonJS)**
+**II. Export / Import functions (CommonJS)**
+
 Now, we have functions ready for testing. It is important to export them so we can import them into another file where we will write our tests later.
 In this exercise, we will use CommonJS for export and import. This means we won't need an index.js page for running the tests because we will run them directly through Node.js, not through the browser.
 In the same file where we wrote our function, we should add another piece of code for functions exporting. To do this, we need to create a single JS object that will contain all of the fuctions, expect the "isPrime" function, because it is a helper (nested) function for the "nthPrime" function.
@@ -46,6 +48,7 @@ Note! We are importing only the "sum" function in this file because we will test
 5.	Now we can remove the result variable and the console.log lines. We don’t need them for function testing.
    
 **III.	Install qUnit**
+
 To be able to write tests, we need a test framework. We will install QUnit:
 1.	Open the Terminal in VS Code from "View"  "Terminal":
 
@@ -85,7 +88,7 @@ Carefully examine the report. You will see:
 •	The expected result.
 •	A summary of all test statuses.
 
-**IV.	Write Tests for All Functions**
+**IV. 	Write Tests for All Functions**
 
 Now that you're familiar with the QUnit framework and know how to use it, let's make tests for all other functions:
 
@@ -190,7 +193,7 @@ NB! A jagged array is a normal array which contains arrays as its elements. You 
 
 NB! You will need to use 'ok' and 'notOk' to test boolean values.
 
-**V.Asynchronous Testing**
+**V.  Asynchronous Testing**
 
 Let's also do some asynchronous tests using the fetch API in JavaScript. As you already know from the previous lectures and exercises, the fetch API allows you to fetch data (to make request and to handle response) from different web APIs asynchronously. 
 
