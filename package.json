@@ -1,0 +1,15 @@
+{
+  "name": "exercise-qunit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "commonjs",
+  "devDependencies": {
+    "qunit": "^2.21.0"
+  }
+}
